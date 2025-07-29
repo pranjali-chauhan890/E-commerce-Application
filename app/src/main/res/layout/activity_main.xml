@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to CARTIQUE!"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:elevation="8dp"
+        android:padding="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/adminImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_admin"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_background"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Admin Image" />
+
+        <Button
+            android:id="@+id/adminBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Portal"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:backgroundTint="#FFA726"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="12dp"/>
+
+        <ImageView
+            android:id="@+id/customerImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_customer"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_background"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Customer Image" />
+
+        <Button
+            android:id="@+id/customerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Portal"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:backgroundTint="#42A5F5"
+            android:paddingVertical="12dp"/>
+    </LinearLayout>
+</LinearLayout>
